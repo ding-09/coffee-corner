@@ -1,5 +1,8 @@
 import React from 'react';
-import { firestore } from './firebase/config';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import { firestore } from './firebase/config';
+import Header from './components/Header';
+import Home from './routes/Home';
 
 const App = () => {
   // const productsRef = firestore.collection('products');
@@ -10,9 +13,12 @@ const App = () => {
   // });
 
   return (
-    <div>
-      <h1>Coffee</h1>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route component={Home} />
+      </Switch>
+    </Router>
   );
 };
 

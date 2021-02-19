@@ -1,2 +1,2 @@
 # Coffee Corner 
-## A simplistic e-commerce website for coffee. 
+## A simple and fully functional e-commerce website for coffee. 
